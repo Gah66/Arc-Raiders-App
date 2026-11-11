@@ -1,0 +1,25 @@
+{
+  "name": "Arcsito Rico - ARC Companion",
+  "short_name": "Arcsito Rico",
+  "description": "Eventos en vivo, catálogo de objetos y mapas tácticos interactivos para ARC Raiders.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0B0E14",
+  "theme_color": "#0B0E14",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
