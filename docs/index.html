@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arcsito Rico • Descargar APK Oficial (ARC Companion)</title>
+    <style>
+      :root {
+        --bg: #0b0e14;
+        --surface: #121520;
+        --card: #141722;
+        --border: #222736;
+        --cyan: #06b6d4;
+        --cyan-light: #22d3ee;
+        --text: #f8fafc;
+        --muted: #94a3b8;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: radial-gradient(circle at top center, rgba(6, 182, 212, 0.14), transparent 55%), var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 16px;
+      }
+      .shell {
+        width: 100%;
+        max-width: 520px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        padding: 24px;
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 6px;
+      }
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        background: var(--cyan-light);
+        box-shadow: 0 0 12px var(--cyan);
+      }
+      .brand-name {
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: 0.18em;
+        color: var(--cyan-light);
+        text-transform: uppercase;
+      }
+      h1 {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+      .subtitle {
+        margin: 6px 0 20px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .meta-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-bottom: 16px;
+      }
+      .meta-box {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 12px;
+      }
+      .meta-label {
+        display: block;
+        font-size: 10px;
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 4px;
+      }
+      .meta-val {
+        font-size: 14px;
+        font-weight: 700;
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        color: #fff;
+      }
+      .notes {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 14px;
+        margin-bottom: 18px;
+      }
+      .notes-title {
+        font-size: 11px;
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-weight: 800;
+        color: var(--cyan-light);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-bottom: 6px;
+      }
+      .notes-body {
+        margin: 0;
+        font-size: 13px;
+        color: #cbd5e1;
+        white-space: pre-line;
+        line-height: 1.5;
+      }
+      .btn-primary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 15px 18px;
+        border-radius: 16px;
+        background: var(--cyan);
+        color: #0b0e14;
+        font-weight: 900;
+        font-size: 14px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 0 24px rgba(6, 182, 212, 0.35);
+        transition: transform 0.12s ease, background 0.15s ease;
+      }
+      .btn-primary:hover {
+        background: var(--cyan-light);
+      }
+      .btn-primary:active {
+        transform: scale(0.98);
+      }
+      .actions-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .btn-secondary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 11px 12px;
+        border-radius: 14px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        color: #e2e8f0;
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .btn-secondary:hover {
+        border-color: rgba(6, 182, 212, 0.5);
+        color: var(--cyan-light);
+      }
+      .steps {
+        margin-top: 20px;
+        padding-top: 18px;
+        border-top: 1px solid var(--border);
+      }
+      .steps h2 {
+        margin: 0 0 10px;
+        font-size: 12px;
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      .steps ol {
+        margin: 0;
+        padding-left: 18px;
+        color: #cbd5e1;
+        font-size: 13px;
+        line-height: 1.65;
+      }
+      .sha {
+        margin-top: 14px;
+        font-size: 11px;
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        color: #64748b;
+        word-break: break-all;
+      }
+      .status-pill {
+        display: inline-block;
+        font-size: 11px;
+        color: var(--cyan-light);
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <div class="brand">
+        <span class="dot"></span>
+        <span class="brand-name">ARCSITO RICO • ARC COMPANION</span>
+      </div>
+      <h1>Descarga oficial Android</h1>
+      <p class="subtitle">
+        Eventos en vivo, alertas locales, catálogo completo de objetos y mapas tácticos interactivos.
+      </p>
+
+      <div class="meta-grid">
+        <div class="meta-box">
+          <span class="meta-label">Versión</span>
+          <span class="meta-val" id="verText">Cargando...</span>
+        </div>
+        <div class="meta-box">
+          <span class="meta-label">Compilación</span>
+          <span class="meta-val" id="buildText">-</span>
+        </div>
+        <div class="meta-box">
+          <span class="meta-label">Tamaño</span>
+          <span class="meta-val" id="sizeText">~10 MB</span>
+        </div>
+      </div>
+
+      <div class="notes">
+        <div class="notes-title">Novedades</div>
+        <p class="notes-body" id="notesText">Consultando última compilación publicada...</p>
+      </div>
+
+      <a class="btn-primary" id="downloadBtn" href="#" rel="noopener noreferrer">
+        Descargar Arcsito Rico APK
+      </a>
+
+      <div class="actions-row">
+        <a class="btn-secondary" id="releasesBtn" href="#" target="_blank" rel="noopener noreferrer">
+          Ver Releases en GitHub
+        </a>
+        <button class="btn-secondary" id="copyBtn" type="button">
+          Copiar enlace
+        </button>
+      </div>
+      <span class="status-pill" id="copyStatus"></span>
+
+      <section class="steps">
+        <h2>Cómo instalar o actualizar en Android</h2>
+        <ol>
+          <li>Pulsa <strong>Descargar Arcsito Rico APK</strong> desde el navegador de tu teléfono.</li>
+          <li>Abre el archivo descargado y permite <strong>Instalar apps desconocidas</strong> si Android lo solicita.</li>
+          <li>¡Listo! Desde la versión <strong>v1.1.0</strong> en adelante, la propia app te avisará cuando haya una nueva versión para actualizar con un toque.</li>
+        </ol>
+        <div class="sha" id="shaText"></div>
+      </section>
+    </main>
+
+    <script>
+      (function () {
+        const verEl = document.getElementById('verText');
+        const buildEl = document.getElementById('buildText');
+        const sizeEl = document.getElementById('sizeText');
+        const notesEl = document.getElementById('notesText');
+        const downloadBtn = document.getElementById('downloadBtn');
+        const releasesBtn = document.getElementById('releasesBtn');
+        const shaEl = document.getElementById('shaText');
+        const copyBtn = document.getElementById('copyBtn');
+        const copyStatus = document.getElementById('copyStatus');
+
+        function inferRepoFromPagesHost() {
+          const host = window.location.hostname || '';
+          const pathParts = window.location.pathname.split('/').filter(Boolean);
+          if (host.endsWith('.github.io')) {
+            const owner = host.replace('.github.io', '');
+            const repo = pathParts[0] || owner + '.github.io';
+            return { owner, repo };
+          }
+          return null;
+        }
+
+        function formatMb(bytes) {
+          if (!bytes || bytes <= 0) return '~10 MB';
+          return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+        }
+
+        async function loadMeta() {
+          const inferred = inferRepoFromPagesHost();
+          let manifest = null;
+
+          try {
+            const res = await fetch('./version.json?t=' + Date.now(), { cache: 'no-store' });
+            if (res.ok) {
+              manifest = await res.json();
+            }
+          } catch (_) {}
+
+          const needsApiFallback =
+            !manifest ||
+            !manifest.apkUrl ||
+            manifest.apkUrl.includes('TU_USUARIO_GITHUB');
+
+          if (needsApiFallback && inferred) {
+            try {
+              const apiRes = await fetch(
+                'https://api.github.com/repos/' + inferred.owner + '/' + inferred.repo + '/releases/latest'
+              );
+              if (apiRes.ok) {
+                const rel = await apiRes.json();
+                const apk = (rel.assets || []).find(function (a) {
+                  return a.name && a.name.toLowerCase().endsWith('.apk');
+                });
+                manifest = {
+                  versionName: (rel.tag_name || '').replace(/^v/i, '') || '1.1.0',
+                  versionCode: manifest && manifest.versionCode ? manifest.versionCode : '-',
+                  apkUrl: apk ? apk.browser_download_url : rel.html_url,
+                  releasePageUrl: rel.html_url,
+                  releaseNotes: rel.body || (manifest && manifest.releaseNotes) || 'Última versión oficial.',
+                  sizeBytes: apk ? apk.size : 0
+                };
+              }
+            } catch (_) {}
+          }
+
+          if (!manifest) {
+            verEl.textContent = 'v1.1.0';
+            notesEl.textContent = 'No se encontró una versión publicada todavía.';
+            return;
+          }
+
+          verEl.textContent = 'v' + (manifest.versionName || '1.1.0');
+          buildEl.textContent = manifest.versionCode ? '#' + manifest.versionCode : '-';
+          sizeEl.textContent = formatMb(manifest.sizeBytes);
+          notesEl.textContent = manifest.releaseNotes || 'Última compilación estable de Arcsito Rico.';
+          downloadBtn.href = manifest.apkUrl || '#';
+          releasesBtn.href =
+            manifest.releasePageUrl ||
+            (inferred
+              ? 'https://github.com/' + inferred.owner + '/' + inferred.repo + '/releases'
+              : '#');
+          if (manifest.sha256) {
+            shaEl.textContent = 'SHA-256: ' + manifest.sha256;
+          }
+        }
+
+        copyBtn.addEventListener('click', async function () {
+          try {
+            await navigator.clipboard.writeText(window.location.href);
+            copyStatus.textContent = 'Enlace copiado para compartir.';
+          } catch (_) {
+            copyStatus.textContent = window.location.href;
+          }
+        });
+
+        loadMeta();
+      })();
+    </script>
+  </body>
+</html>
+

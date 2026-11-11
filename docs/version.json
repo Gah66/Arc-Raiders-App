@@ -1,0 +1,12 @@
+{
+  "appName": "Arcsito Rico",
+  "appId": "com.arccompanion.events",
+  "versionCode": 2,
+  "versionName": "1.1.0",
+  "apkUrl": "https://github.com/Gah66/Arc-Raiders-App/releases/latest/download/ArcsitoRico-release.apk",
+  "releasePageUrl": "https://github.com/Gah66/Arc-Raiders-App/releases/latest",
+  "releaseNotes": "Primera versión release oficial de Arcsito Rico con Eventos, Objetos, Mapas interactivos y actualizaciones automáticas.",
+  "sizeBytes": 9310100,
+  "sha256": "34ef06340bbe9e4b24fbd983277f4942f8fff099f39e57b3db921068e482a3e4",
+  "publishedAt": "2026-11-10T20:26:29.724Z"
+}
