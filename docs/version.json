@@ -1,0 +1,12 @@
+{
+  "appName": "Arcsito Rico",
+  "appId": "com.arccompanion.events",
+  "versionCode": 3,
+  "versionName": "1.1.1",
+  "apkUrl": "https://github.com/Gah66/Arc-Raiders-App/releases/latest/download/ArcsitoRico-release.apk",
+  "releasePageUrl": "https://github.com/Gah66/Arc-Raiders-App/releases/latest",
+  "releaseNotes": "Redirección exacta de Objetos al Mapa, scroll infinito automático y bloqueo de fondo en detalle.",
+  "sizeBytes": 9314632,
+  "sha256": "00611ffaae5636adc0bad5ff271ffe6170d241483bcf9b0e9c466aa7776087b2",
+  "publishedAt": "2026-11-11T02:57:40.864Z"
+}
